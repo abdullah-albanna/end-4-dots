@@ -152,7 +152,7 @@ in
           
           # Shadow
           shadow = {
-            enabled = true;
+            enabled = false;
             range = 30;
             render_power = 3;
             color = "0x66000000";
@@ -195,8 +195,8 @@ in
           ];
         };
         misc = {
-          vfr = 1;
-          vrr = 1;
+          vfr = true;
+          vrr = false;
           animate_manual_resizes = false;
           animate_mouse_windowdragging = false;
           enable_swallow = false;
