@@ -117,9 +117,10 @@ in
         };
         binds = { scroll_event_delay = 0; };
         input = {
+          force_no_accel = 0;
           # Keyboard: Add a layout and uncomment kb_options for Win+Space switching shortcut
           kb_layout = "us";
-          # kb_options = grp:win_space_toggle;
+          kb_options = caps:swapescape;
           numlock_by_default = true;
           repeat_delay = 250;
           repeat_rate = 35;
@@ -141,7 +142,7 @@ in
           fullscreen_opacity = 1.0;
 
           blur = {
-            enabled = true;
+            enabled = false;
             size = 6;
             passes = 2;
             new_optimizations = "on";
@@ -158,7 +159,7 @@ in
           };
         };
         animations = {
-          enabled = true;
+          enabled = false;
           bezier = [
             "linear, 0, 0, 1, 1"
             "md3_standard, 0.2, 0, 0, 1"
